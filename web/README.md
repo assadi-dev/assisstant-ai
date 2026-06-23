@@ -1,5 +1,29 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Variables d'environnement
+
+Le projet a besoin de variables d'environnement (base de données, auth, provider LLM).
+Un fichier d'exemple **orienté production** est fourni : [`.env.example`](.env.example).
+
+```bash
+# Production : copier et renseigner les vraies valeurs
+cp .env.example .env.production
+
+# Développement local : créer un .env.local (Ollama par défaut, aucune clé requise)
+```
+
+Variables principales :
+
+| Variable | Rôle |
+|---|---|
+| `DATABASE_URL` | Connexion PostgreSQL (Drizzle ORM) |
+| `BETTER_AUTH_SECRET` / `BETTER_AUTH_URL` | Better Auth (secret + URL publique) |
+| `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` | OAuth Google |
+| `AI_PROVIDER` | Provider LLM : `anthropic` \| `openai` \| `mistral` \| `ollama` |
+| `<PROVIDER>_API_KEY` / `<PROVIDER>_MODEL` | Clé et modèle du provider choisi |
+
+> ⚠️ Ne jamais commiter de secret réel. `.env.example` ne contient que des placeholders.
+
 ## Getting Started
 
 First, run the development server:
