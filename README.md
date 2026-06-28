@@ -4,6 +4,20 @@ Plateforme **SaaS multi-agents** : chaque utilisateur crée et pilote ses propre
 
 En plus des agents utilisateur, la plateforme embarque **4 agents locaux spécialisés** (Brainstormer, Développeur web, Lead dev, Spécialiste n8n), le **Brainstormer** jouant le rôle de chef d'orchestre.
 
+## Aperçu
+
+### Connexion
+
+![Page de connexion](previews/login.png)
+
+### Dashboard
+
+![Dashboard](previews/dashboard.png)
+
+### Chat
+
+![Interface de chat](previews/chat.png)
+
 ## Fonctionnalités
 
 - **Création d'agents** personnalisés (nom, rôle, prompt système, modèle) — limite de 3 en Free, appliquée côté serveur.

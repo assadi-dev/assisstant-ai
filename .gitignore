@@ -2,3 +2,5 @@
 web/node_modules
 web/.next
 web/package-lock.json
+web/tsconfig.tsbuildinfo
+ui
