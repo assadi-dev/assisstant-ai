@@ -6,6 +6,10 @@ En plus des agents utilisateur, la plateforme embarque **4 agents locaux spécia
 
 ## Aperçu
 
+### Landing page
+
+![Landing page](previews/landing.png)
+
 ### Connexion
 
 ![Page de connexion](previews/login.png)
